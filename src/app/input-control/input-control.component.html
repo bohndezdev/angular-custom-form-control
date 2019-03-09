@@ -1,0 +1,9 @@
+<label>{{ myLabel }}</label>
+
+<input
+  [value]="value"
+  [disabled]="isDisabled"
+  type="text"
+  (input)="onInput($event.target.value)">
+
+<span>Number of letters: {{ counter }}</span>

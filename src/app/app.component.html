@@ -1,0 +1,13 @@
+<app-input-control
+  [myLabel]="'Label de mi input'"
+  [(ngModel)]="myText">
+</app-input-control>
+<p>Valor: {{ myText }}</p>
+
+<form [formGroup]="pruebaForm">
+
+  <app-input-control
+    formControlName="pruebaInput">
+  </app-input-control>
+
+</form>
