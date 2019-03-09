@@ -31,6 +31,7 @@ export class InputControlComponent implements OnInit, ControlValueAccessor {
   onInput(value: string) {
     this.counter = value.length;
     this.value = value;
+    this.onTouch();
     this.onChange(this.value);
   }
 
